@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Fira;
+  src: url(../Fonts/FiraCode-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.11rem;
+  font-family: Fira;
+  /* user-select: none; */
+  -webkit-tap-highlight-color: transparent;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: url("../../Assets/Icons/background-body.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#root {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282c33;
+  /* background-color: #144488e8; */
+}
+
+#router {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-pages {
+  width: 100%;
+}
+
+.about-pages > p {
+  width: 30%;
+  padding: 0.5%;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 130%;
+  color: #ff0000;
+  border: 1px solid #abb2bf;
+}
+
+@media (max-width: 700px) {
+  .about-pages > p {
+    width: 40%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-pages > p {
+    width: 50%;
+    font-size: 14px;
+  }
+}
