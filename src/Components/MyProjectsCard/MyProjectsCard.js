@@ -19,6 +19,34 @@ export function MyProjectsCard() {
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
     },
+    {
+      id: 2,
+      img: xpress,
+      name: "Xpress",
+      about: "shopping. user side",
+      link: "https://xpress-webstore.netlify.app/",
+    },
+    {
+      id: 3,
+      img: honey,
+      name: "Honey",
+      about: "honey shopping. user side",
+      link: "https://honey-user.netlify.app/",
+    },
+    {
+      id: 4,
+      img: xpress,
+      name: "Xpress",
+      about: "shopping. user side",
+      link: "https://xpress-webstore.netlify.app/",
+    },
+    {
+      id: 5,
+      img: honey,
+      name: "Honey",
+      about: "honey shopping. user side",
+      link: "https://honey-user.netlify.app/",
+    },
   ];
 
   return (
