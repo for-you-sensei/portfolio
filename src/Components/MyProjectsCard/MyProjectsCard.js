@@ -19,6 +19,9 @@ export function MyProjectsCard() {
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
     },
+
+    // for test
+
     {
       id: 2,
       img: xpress,
