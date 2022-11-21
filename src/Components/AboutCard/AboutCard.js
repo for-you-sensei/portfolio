@@ -4,6 +4,19 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 export function AboutCard() {
+  const socials = [
+    {
+      id: 0,
+      link: "https://t.me/for_you_sensei",
+      icon: <TelegramIcon />,
+    },
+    {
+      id: 1,
+      link: "https://github.com/for-you-sensei",
+      icon: <GitHubIcon />,
+    },
+  ];
+
   return (
     <div id="about">
       <div className="about-pages">
@@ -26,20 +39,18 @@ export function AboutCard() {
           animi, dicta quo inventore, nemo corporis deserunt cupiditate.
         </p>
         <div className="about-texts-social">
-          <a
-            href="https://t.me/for_you_sensei"
-            target="blank"
-            className="home-social-link"
-          >
-            <TelegramIcon />
-          </a>
-          <a
-            href="https://github.com/for-you-sensei"
-            target="blank"
-            className="home-social-link"
-          >
-            <GitHubIcon />
-          </a>
+          {socials.map((item) => {
+            return (
+              <a
+                key={item.id}
+                href={item.link}
+                target="blank"
+                className="home-social-link"
+              >
+                {item.icon}
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

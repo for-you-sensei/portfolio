@@ -28,7 +28,7 @@ export function Navbar() {
     {
       id: 3,
       name: "Contact",
-      link: "/contact",
+      link: "/Contacts",
     },
   ];
 
@@ -91,7 +91,7 @@ export function Navbar() {
                   }}
                   className="drawer-text"
                 >
-                  <p>{item.name}</p>
+                  {item.name}
                 </ListItemButton>
               </NavLink>
             );

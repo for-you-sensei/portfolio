@@ -11,6 +11,7 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
+      typeproj: "Live"
     },
     {
       id: 1,
@@ -18,6 +19,7 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
+      typeproj: "Live"
     },
 
     // for test
@@ -28,6 +30,7 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
+      typeproj: "Live"
     },
     {
       id: 3,
@@ -35,6 +38,7 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
+      typeproj: "Live"
     },
     {
       id: 4,
@@ -42,6 +46,7 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
+      typeproj: "Live"
     },
     {
       id: 5,
@@ -49,6 +54,7 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
+      typeproj: "Live"
     },
   ];
 
@@ -73,7 +79,7 @@ export function MyProjectsCard() {
                 </div>
 
                 <a href={item.link} target="blank">
-                  <button className="my-projects-link">Live</button>
+                  <button className="my-projects-link">{item.typeproj}</button>
                 </a>
               </div>
             </div>
