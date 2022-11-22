@@ -28,7 +28,7 @@ export function Navbar() {
     {
       id: 3,
       name: "Contact",
-      link: "/Contacts",
+      link: "/contact",
     },
   ];
 
