@@ -40,8 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #282c33;
-  /* background-color: #144488e8; */
+  background-color: #000;
 }
 
 #router {
