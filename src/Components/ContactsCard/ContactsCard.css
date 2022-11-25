@@ -21,3 +21,33 @@
   line-height: 156%;
   color: #fff;
 }
+
+@media (max-width: 700px) {
+  #contacts {
+    padding: 30px 5%;
+    gap: 20px;
+  }
+
+  .contacts-find {
+    gap: 10px;
+  }
+
+  .contacts-find :nth-child(1) {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  #contacts {
+    padding: 20px 5%;
+    gap: 10px;
+  }
+
+  .contacts-find {
+    gap: 5px;
+  }
+
+  .contacts-find :nth-child(1) {
+    font-size: 16px;
+  }
+}
