@@ -65,20 +65,21 @@
   align-items: center;
   position: relative;
   gap: 20px;
-  background-color: #144488;
+  background-color: #000;
 }
 
 .drawer > a {
   width: 100%;
+  border-radius: 1000px 0 1000px 1000px;
   display: flex;
   text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #0000ff;
 }
 
 .drawer > a.active {
   color: #fff;
-  background-color: #000;
+  background-color: #ff0000;
 }
 
 .drawer-text {
