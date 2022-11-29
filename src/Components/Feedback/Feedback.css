@@ -41,11 +41,8 @@ textarea {
   color: #000;
 }
 
-.feedback-form input::placeholder {
-  color: #fff;
-}
-
-.feedback-form textarea::placeholder {
+.feedback-form input::placeholder,
+textarea::placeholder {
   color: #fff;
 }
 
