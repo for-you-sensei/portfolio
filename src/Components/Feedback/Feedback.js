@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Feedback.css";
 
 export function Feedback() {
-  const [project, setProject] = useState({
+  const [feedback, setFeedback] = useState({
     fullname: "",
     phone: "",
     about: "",
@@ -15,30 +15,30 @@ export function Feedback() {
         className="feedback-form"
         onSubmit={(e) => {
           e.preventDefault();
-          console.log(project);
-          setProject({ fullname: "", phone: "", about: "" });
+          console.log(feedback);
+          setFeedback({ fullname: "", phone: "", about: "" });
         }}
       >
         <input
           type="text"
           placeholder="full name"
           autoComplete="off"
-          value={project.fullname}
-          onChange={(e) => setProject({ ...project, fullname: e.target.value })}
+          value={feedback.fullname}
+          onChange={(e) => setFeedback({ ...feedback, fullname: e.target.value })}
         />
         <input
           type="text"
           placeholder="phone number"
           autoComplete="off"
-          value={project.phone}
-          onChange={(e) => setProject({ ...project, phone: e.target.value })}
+          value={feedback.phone}
+          onChange={(e) => setFeedback({ ...feedback, phone: e.target.value })}
         />
         <textarea
           placeholder="about"
-          value={project.about}
-          onChange={(e) => setProject({ ...project, about: e.target.value })}
+          value={feedback.about}
+          onChange={(e) => setFeedback({ ...feedback, about: e.target.value })}
         ></textarea>
-        <button type="submit" className="my-projects-link">
+        <button type="submit" className="my-feedbacks-link">
           Send Feedback
         </button>
       </form>
