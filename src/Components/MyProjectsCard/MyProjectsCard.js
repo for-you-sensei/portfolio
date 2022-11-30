@@ -2,6 +2,8 @@ import React from "react";
 import "./MyProjectsCard.css";
 import xpress from "../../Assets/Icons/MyProjects/xpress.png";
 import honey from "../../Assets/Icons/MyProjects/honey.png";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 export function MyProjectsCard() {
   const completed = [
@@ -11,7 +13,9 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
     {
       id: 1,
@@ -19,7 +23,9 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
 
     // for test
@@ -30,7 +36,9 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
     {
       id: 3,
@@ -38,7 +46,9 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
     {
       id: 4,
@@ -46,7 +56,9 @@ export function MyProjectsCard() {
       name: "Xpress",
       about: "shopping. user side",
       link: "https://xpress-webstore.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
     {
       id: 5,
@@ -54,7 +66,9 @@ export function MyProjectsCard() {
       name: "Honey",
       about: "honey shopping. user side",
       link: "https://honey-user.netlify.app/",
-      typeproj: "Live"
+      typeproj: "Live",
+      likes: 10,
+      views: 100,
     },
   ];
 
@@ -71,6 +85,21 @@ export function MyProjectsCard() {
               <figure className="my-projects-figure">
                 <img src={item.img} alt="" />
               </figure>
+
+              <div className="my-projects-actions">
+                <figure
+                  style={{ cursor: "pointer" }}
+                  // onClick={() => {}}
+                >
+                  <ThumbUpIcon />
+                  <p>{item.likes}</p>
+                </figure>
+                
+                <figure>
+                  <VisibilityIcon />
+                  <p>{item.views}</p>
+                </figure>
+              </div>
 
               <div className="my-projects-card-texts">
                 <div className="my-projects-text-1">

@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -34,12 +35,30 @@
   border-bottom: 1px solid #abb2bf;
 }
 
+.my-projects-actions {
+  width: 100%;
+  padding: 2px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.my-projects-actions > figure {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+}
+
 .my-projects-card-texts {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 15px;
+}
+
+.my-projects-card-texts > a {
+  width: 50%;
 }
 
 .my-projects-text-1 :nth-child(1) {
@@ -56,7 +75,7 @@
 }
 
 .my-projects-link {
-  width: 50%;
+  width: 100%;
   height: 35px;
   background: none;
   border: 1px solid #c778dd;
